@@ -3,7 +3,7 @@ const SECRET_KEY = "BJDFBSOIJSLKNSJNFK";
 const createTokens = (user) => {
   const accessToken = jwt.sign(
     { username: user.username, id: user.id },
-    SECRET_KEY,
+    SECRET,
     { expiresIn: "2h" }
   );
 
